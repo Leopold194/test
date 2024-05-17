@@ -19,6 +19,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
         script: |
-          cd /path/to/your/server/directory
+          cd /var/www/
           git pull origin main  # Update your code from GitHub
           # Add more deployment steps if needed
