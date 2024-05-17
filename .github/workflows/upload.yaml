@@ -20,5 +20,5 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         script: |
           cd /var/www/TEST
-          git pull origin main  # Update your code from GitHub
-          # Add more deployment steps if needed
+          git fetch origin main  # Fetch latest changes
+          git reset --hard origin/main
